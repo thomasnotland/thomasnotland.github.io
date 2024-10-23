@@ -1,0 +1,30 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+header {
+  height: calc(100vh - 120px);
+  width: 100vw;
+}
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+}
+
+.sticky .label {
+  color: #666;
+}
